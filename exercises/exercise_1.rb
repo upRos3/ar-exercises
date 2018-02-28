@@ -26,4 +26,4 @@ gastown = Store.new(name: 'Gastown',
 
 gastown.save
 
-puts Store.count
+puts "Number of stores: #{Store.count}"
