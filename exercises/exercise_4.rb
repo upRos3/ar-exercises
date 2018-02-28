@@ -38,7 +38,7 @@ yaletown.save
   puts "#{name} sells mens apparel and has an annual revenue of $#{revenue}"
 end
 
-@womens_stores = Store.where(['womens_apparel = ? and annual_revenue < ?', true, 1000000])
+@womens_stores = Store.where(['womens_apparel = ? and annual_revenue < ?', true, 1_000_000])
 
 @womens_stores.each do |res|
   name = res.name
